@@ -2,3 +2,6 @@
 name = "convertlib"
 description = "A library for converting between different units."
 version = "0.1.0"
+dependencies = [
+    "numpy"
+]
