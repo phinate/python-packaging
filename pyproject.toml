@@ -9,7 +9,9 @@ dependencies = [
 [project.optional-dependencies]
 test = [
   "pytest",
+  "numpy >= 1.24.0"  # strict=true in np.testing.assert_array_equal (https://numpy.org/doc/stable/release/1.24.0-notes.html#strict-option-for-testing-assert-array-equal)
 ]
 dev = [
   "pytest",
+  "numpy >= 1.24.0"  # strict=true in np.testing.assert_array_equal (https://numpy.org/doc/stable/release/1.24.0-notes.html#strict-option-for-testing-assert-array-equal)
 ]

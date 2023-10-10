@@ -15,7 +15,7 @@ def test_float_conversion():
 def test_array_conversion():
     miles_array = np.array([1, 2, 3])
     km_array = miles_array * 1.60934
-    np.testing.assert_array_equal(miles_to_km(miles_array), km_array)
+    np.testing.assert_array_equal(miles_to_km(miles_array), km_array, strict=True)
 
 def test_negative_miles():
     assert miles_to_km(-1) == -1 * 1.60934
